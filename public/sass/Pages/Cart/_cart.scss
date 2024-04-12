@@ -1,0 +1,89 @@
+.cart__title,
+.table__container {
+    width: 80%;
+    margin: 50px auto 0;
+}
+.cart__title h1 {
+    color: #c285ff;
+    font-style: italic;
+}
+/* #9f97ff */
+
+.table__container th {
+    color: #9f97ff;
+    font-size: 25px;
+    text-align: center;
+    background: #374a5a;
+    border: none;
+}
+
+.table__container td {
+    /* color: #00c5ff; */
+    color: silver;
+    text-align: center;
+    background: #374a5a;
+    border: none;
+}
+.table__container .table__total {
+    color: #00c5ff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.table__container .table__button {
+    color: white;
+    background-color: #d9534f;
+    border: 3px solid #d9534f;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.table__container .table__buttonDown {
+    color: white;
+    background-color: #ffa500;
+    border: 3px solid #ffa500;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.table__container .table__buttonUp {
+    color: white;
+    background-color: #33ccff;
+    border: 3px solid #33ccff;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+/*  */
+
+.table__quantity span {
+    padding: 0 10px;
+}
+
+/* #FF3333 */
+.table__delete .table__button {
+    background-color: #ff3333;
+    border-color: #ff3333;
+    color: white;
+}
+
+.table__img {
+    height: 10%;
+    object-fit: cover;
+}
+
+.table__container tfoot {
+    margin-top: 40px;
+}
+
+/* 00ffc3 */
+
+/* table__billAll__itle */
+.table__container tfoot th {
+    color: #00ffc3;
+    text-transform: uppercase;
+}
+
+#innerTable td {
+    vertical-align: middle;
+}

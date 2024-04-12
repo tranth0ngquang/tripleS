@@ -1,0 +1,27 @@
+//!Vendor là file của thư viện nếu nó là sass thì import vào đây, còn nếu là file css thì import vào thẻ head
+
+//! Helper
+@import "Helper/_variables";
+@import "Helper/_mixin";
+
+//! Base
+@import "base/_reset";
+@import "base/_customize";
+@import "base/_responsive";
+
+//! Components
+@import "Component/_button";
+@import "Component/_card";
+
+//! Layout
+@import "Layouts/_header";
+@import "Layouts/_loading";
+
+//!Pages
+@import "Pages/Login/login";
+@import "Pages/Home/homeCarousel";
+@import "Pages/Home/homeProduct.scss";
+@import "Pages/Details/details.scss";
+@import "Pages/Cart/cart.scss";
+
+//! Theme

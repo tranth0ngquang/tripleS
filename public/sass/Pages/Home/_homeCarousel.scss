@@ -1,0 +1,195 @@
+.myCarousel {
+    margin-top: 50px;
+}
+.wrapper {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myCarousel .container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.myCarousel .myCarousel__card {
+    width: 80px;
+    border-radius: 0.75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.myCarousel .myCarousel__card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.myCarousel .myCarousel__card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.myCarousel .myCarousel__card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: #cc66ff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.wrapper input {
+    display: none;
+}
+
+input:checked + .myCarousel__card {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.myCarousel .myCarousel__card[for="c1"] {
+    background-image: url("https://shop.cyberlearn.vn/images/vans-black-black.png");
+    background-position: center;
+}
+.myCarousel .myCarousel__card[for="c2"] {
+    background-image: url("https://shop.cyberlearn.vn/images/converse-chuck-taylor.png");
+    background-position: center;
+}
+.myCarousel .myCarousel__card[for="c3"] {
+    background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-270-react.png");
+    background-position: center;
+}
+.myCarousel .myCarousel__card[for="c4"] {
+    background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
+    background-position: center;
+}
+
+.myCarousel .myCarousel__card[for="c5"] {
+    background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
+    background-position: center;
+}
+
+.myCarousel .myCarousel__card[for="c6"] {
+    background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
+    background-position: center;
+}
+
+.myCarousel .myCarousel__card[for="c7"] {
+    background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
+    background-position: center;
+}
+
+.myCarousel .myCarousel__card[for="c8"] {
+    background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
+    background-position: center;
+}
+
+.myCarousel__card h4 {
+    margin: 0;
+}
+.myCarousel__card p {
+    margin: 0;
+}
+/* css button */
+.button__seemore {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 5px 10px;
+    border: 0;
+    background-color: transparent;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    /* color: #fff; */
+    color: #ffcc00;
+    z-index: 2;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button__seemore::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(#488cfb, #29dbbc, #ddf505, #ff9f0e, #e440bb, #655adc, #488cfb);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+}
+
+.button__seemore:hover::after {
+    animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
+.myCarousel button:active {
+    --border-width: 5px;
+}
+
+.infoAndButton {
+    display: flex;
+    align-items: center;
+}
+
+.infoAndButton p {
+    font-style: italic;
+}

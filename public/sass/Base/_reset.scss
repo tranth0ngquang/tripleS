@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// font chữ và background cho toàn bộ trang web
+body,
+header,
+.carousel {
+    font-family: "Rubik", sans-serif;
+    background-color: #374a5a;
+}
+// tiền tệ thì nằm trên
+.currency {
+    vertical-align: super;
+}
+// ẩn nội dung khi load trang
+#fullContent {
+    display: none;
+}
+// tắt gạch chân của thẻ a
+a {
+    text-decoration: none;
+}
