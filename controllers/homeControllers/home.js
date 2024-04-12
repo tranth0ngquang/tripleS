@@ -162,10 +162,10 @@ function isLoggedIn() {
 function moveToDetail(productId) {
   // Nếu người dùng đã đăng nhập
   if (isLoggedIn()) {
-    window.location.href = `/views/detail.html?productId=${productId}`;
+    window.location.href = `./views/detail.html?productId=${productId}`;
   } else {
     // Nếu người dùng chưa đăng nhập, chuyển hướng đến trang đăng nhập
-    window.location.href = "/views/loginPage.html";
+    window.location.href = "./views/loginPage.html";
   }
 }
 
