@@ -181,7 +181,7 @@ function hienThiProduct(mang) {
             <div class="gioDienThoai">
                 <div>
                     <img class="img-fluid"
-                        src="../../public/img/muaik.png" alt="" />
+                        src="../../assets/img/muaik.png" alt="" />
                 </div>
             </div>
         </div>
