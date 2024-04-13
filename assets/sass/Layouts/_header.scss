@@ -347,6 +347,8 @@ header input {
     opacity: 0;
 } */
 
+
+
 @keyframes welcome {
     0% {
         margin: 0 0;
@@ -511,11 +513,11 @@ header input {
 
 @media (max-width: 800px) {
     body {
-        height: auto;
-        min-height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-        align-items: flex-start;
+        // height: auto;
+        // min-height: 100vh;
+        // overflow-x: hidden;
+        // overflow-y: auto;
+        // align-items: flex-start;
     }
 
     #welcomeMessage {
@@ -531,9 +533,9 @@ header input {
         flex-direction: column;
     }
 
-    #welcomeMessage figcaption h1::before {
-        content: "Close";
-    }
+    // #welcomeMessage figcaption h1::before {
+    //     content: "Close";
+    // }
 
     @keyframes welcome {
         0% {
@@ -736,8 +738,37 @@ header input {
     font-family: "Rubik", sans-serif !important;
 }
 
-/* .class__loginIcon {
-    transform: rotate(180deg);
-    font-size: 40px;
-    color: lightgray;
-} */
+// RESPONSIVE
+
+@media screen and (max-width: 768px) {
+    #welcomeMessage {
+        margin-top: 0;
+    }
+    #toggleOpen:checked ~ #welcomeMessage {
+        margin-top: 0;
+    }
+    #toggleOpen:checked ~ #welcomeMessage figcaption h1 {
+        flex-direction: row;
+    }
+    #toggleOpen:checked ~ #welcomeMessage figcaption h1 b {
+        font-size: 25px;
+        margin: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    #welcomeMessage {
+        margin-top: 0;
+    }
+    #toggleOpen:checked ~ #welcomeMessage {
+        margin-top: 0;
+    }
+    #toggleOpen:checked ~ #welcomeMessage figcaption h1 {
+        flex-direction: row;
+    }
+    #toggleOpen:checked ~ #welcomeMessage figcaption h1 b {
+        font-size: 15px;
+        margin: 0 !important;
+    }
+}

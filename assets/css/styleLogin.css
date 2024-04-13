@@ -55,7 +55,7 @@ header {
     border-radius: 3px;
     transform-origin: right;
     transform: scaleZ(0);
-    transition: transform 0.5s;
+    transition: transform 0.2s;
 }
 
 .navigation a:hover::after {
@@ -126,6 +126,7 @@ header {
 
 .wrapper.active {
     min-height: 650px;
+    margin-top: 75px;
 }
 
 .wrapper .form-box {
@@ -278,4 +279,30 @@ header {
 
 .error {
     margin-bottom: 70px; /* Điều chỉnh margin bottom tùy ý */
+}
+/* LOADING */
+
+/* RESPONSIVE */
+@media screen and (max-width: 390px) {
+    header {
+        padding: 0;
+        width: 75%;
+        flex-direction: column;
+    }
+
+    .btnlogin-popup {
+        transform: translate(85px, 20px);
+    }
+
+    .wrapper.active {
+        margin-top: 150px;
+    }
+
+    .swal2-container {
+        width: 75%;
+        top: -210px;
+    }
+    .swal2-popup {
+        margin-top: 171px !important;
+    }
 }

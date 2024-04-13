@@ -87,3 +87,22 @@
 #innerTable td {
     vertical-align: middle;
 }
+
+// RESPONSIVE
+@media screen and (max-width: 390px) {
+    .table__container {
+        width: 100%;
+        margin: 0;
+    }
+    .table {
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+    .table__container th {
+        font-size: 16px;
+    }
+    .table>thead {
+        vertical-align: middle;
+    }
+}

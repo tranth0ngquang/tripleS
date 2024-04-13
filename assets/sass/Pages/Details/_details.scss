@@ -204,3 +204,33 @@
     object-fit: cover;
     /* background-color: #fafafa; */
 }
+
+// RESPONSIVE
+@media screen and (max-width: 390px) {
+    .hello__user h2 {
+        font-size: 15px;
+    }
+    .allInfo__favorite {
+        font-size: 11px;
+    }
+    .allInfo__star > span:nth-of-type(1),
+    .allInfo__star > span:nth-of-type(2) {
+        border: none;
+    }
+    .allInfo__price {
+        width: 100%;
+    }
+    .allInfo__size__choose button {
+        margin: 0;
+    }
+    .allInfo__quantity button {
+        margin: 0;
+    }
+    .allInfo__quantity .input__quantity {
+        margin: 0;
+    }
+    .allInfo__addToCart button:nth-of-type(1),
+    .allInfo__addToCart button:nth-of-type(2) {
+        margin: 0;
+    }
+}

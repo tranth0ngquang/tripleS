@@ -146,7 +146,7 @@ function hienThiProduct(mang) {
   // quét mảng lấy full item để tạo nội dung html
   mang.map(function (item, index) {
     content += `
-        <div class="product__item col-3">
+        <div class="product__item col-sm-3 col-12">
         <div class="outDiv" style="margin-top: 50px;">
             <div class="box">
                 <div class="card">

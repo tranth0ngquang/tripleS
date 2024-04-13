@@ -52,7 +52,7 @@ function hienThiProduct(mang) {
   // quét mảng lấy full item để tạo nội dung html
   mang.map(function (item, index) {
     content += `
-        <div class="product__item col-3">
+        <div class="product__item col-sm-6 col-lg-3 col-12">
         <div class="outDiv" style="margin-top: 50px;">
             <div class="box">
                 <div class="card">
@@ -101,7 +101,9 @@ function hienThiProduct(mang) {
 function hienThiCarousel(mang) {
   // quét mảng lấy 7 item để tạo nội dung html
   let content = "";
-  mang.slice(0, 7).forEach(function (item, index) {
+  let numItems = window.matchMedia("(max-width: 390px)").matches ? 1 : 7;
+  mang.slice(0, numItems).forEach(function (item, index) {
+    // mang.slice(0, 7).forEach(function (item, index) {
     content += `
         <input type="radio" name="slide" id="c${index + 1}" checked>
         <label for="c${index + 1}" class="myCarousel__card">
@@ -131,16 +133,17 @@ function hienThiCarousel(mang) {
     document.querySelector(
       `.myCarousel__card[for="c${index + 1}"]`
     ).style.backgroundImage = `url('${item.image}')`;
-    document.querySelector(
-      `.myCarousel__card[for="c${index + 1}"]`
-    ).style.backgroundPosition = "center";
-    document.querySelector(
-      `.myCarousel__card[for="c${index + 1}"]`
-    ).style.backgroundSize = "500px";
 
-    document.querySelector(
-      `.myCarousel__card[for="c${index + 1}"]`
-    ).style.backgroundRepeat = "no-repeat";
+    // document.querySelector(
+    //   `.myCarousel__card[for="c${index + 1}"]`
+    // ).style.backgroundPosition = "center";
+    // document.querySelector(
+    //   `.myCarousel__card[for="c${index + 1}"]`
+    // ).style.backgroundSize = "500px";
+
+    // document.querySelector(
+    //   `.myCarousel__card[for="c${index + 1}"]`
+    // ).style.backgroundRepeat = "no-repeat";
   });
 }
 

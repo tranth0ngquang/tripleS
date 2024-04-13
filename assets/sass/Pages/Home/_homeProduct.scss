@@ -296,3 +296,21 @@
 .active__buttonCategory {
     color: #00ffc3;
 }
+
+.input-group {
+    width: auto;
+}
+// RESPONSIVE
+
+// RESPONSIVE
+
+@media screen and (max-width: 768px) {
+    .product {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .product {
+        padding-top: 0px;
+    }
+}

@@ -524,13 +524,6 @@ header input {
   }
 }
 @media (max-width: 800px) {
-  body {
-    height: auto;
-    min-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    align-items: flex-start;
-  }
   #welcomeMessage {
     margin-top: 10em;
   }
@@ -540,9 +533,6 @@ header input {
   }
   #toggleOpen:checked ~ #welcomeMessage figcaption h1 {
     flex-direction: column;
-  }
-  #welcomeMessage figcaption h1::before {
-    content: "Close";
   }
   @keyframes welcome {
     0% {
@@ -736,11 +726,36 @@ header input {
   font-family: "Rubik", sans-serif !important;
 }
 
-/* .class__loginIcon {
-    transform: rotate(180deg);
-    font-size: 40px;
-    color: lightgray;
-} */
+@media screen and (max-width: 768px) {
+  #welcomeMessage {
+    margin-top: 0;
+  }
+  #toggleOpen:checked ~ #welcomeMessage {
+    margin-top: 0;
+  }
+  #toggleOpen:checked ~ #welcomeMessage figcaption h1 {
+    flex-direction: row;
+  }
+  #toggleOpen:checked ~ #welcomeMessage figcaption h1 b {
+    font-size: 25px;
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  #welcomeMessage {
+    margin-top: 0;
+  }
+  #toggleOpen:checked ~ #welcomeMessage {
+    margin-top: 0;
+  }
+  #toggleOpen:checked ~ #welcomeMessage figcaption h1 {
+    flex-direction: row;
+  }
+  #toggleOpen:checked ~ #welcomeMessage figcaption h1 b {
+    font-size: 15px;
+    margin: 0 !important;
+  }
+}
 .socket {
   width: 200px;
   height: 200px;
@@ -1047,6 +1062,21 @@ header input {
   }
   100% {
     background: #abf8ff;
+  }
+}
+.footer__text {
+  color: #6da8ff;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .footer__text {
+    font-size: 20px;
   }
 }
 #Login__body {
@@ -1397,41 +1427,57 @@ input:checked + label .description {
 .myCarousel .myCarousel__card[for=c1] {
   background-image: url("https://shop.cyberlearn.vn/images/vans-black-black.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for=c2] {
   background-image: url("https://shop.cyberlearn.vn/images/converse-chuck-taylor.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for=c3] {
   background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-270-react.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for=c4] {
   background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for=c5] {
   background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for=c6] {
   background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for=c7] {
   background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for=c8] {
   background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
   background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .myCarousel__card h4 {
@@ -1507,6 +1553,33 @@ input:checked + label .description {
   font-style: italic;
 }
 
+@media screen and (max-width: 768px) {
+  .myCarousel .wrapper .myCarousel__card {
+    background-size: 300px;
+    height: 300px;
+  }
+  .infoAndButton p {
+    display: none;
+  }
+  .myCarousel .container {
+    height: 350px;
+  }
+  .description h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .myCarousel .wrapper .myCarousel__card {
+    background-size: 300px;
+    height: 300px;
+  }
+  .infoAndButton p {
+    display: none;
+  }
+  .myCarousel .container {
+    height: 350px;
+  }
+}
 .product {
   padding-top: 150px;
 }
@@ -1819,6 +1892,20 @@ input:checked + label .description {
   color: #00ffc3;
 }
 
+.input-group {
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .product {
+    padding-top: 0px;
+  }
+}
 .allInfo {
   margin-top: 50px;
 }
@@ -2028,6 +2115,34 @@ input:checked + label .description {
   /* background-color: #fafafa; */
 }
 
+@media screen and (max-width: 390px) {
+  .hello__user h2 {
+    font-size: 15px;
+  }
+  .allInfo__favorite {
+    font-size: 11px;
+  }
+  .allInfo__star > span:nth-of-type(1),
+  .allInfo__star > span:nth-of-type(2) {
+    border: none;
+  }
+  .allInfo__price {
+    width: 100%;
+  }
+  .allInfo__size__choose button {
+    margin: 0;
+  }
+  .allInfo__quantity button {
+    margin: 0;
+  }
+  .allInfo__quantity .input__quantity {
+    margin: 0;
+  }
+  .allInfo__addToCart button:nth-of-type(1),
+  .allInfo__addToCart button:nth-of-type(2) {
+    margin: 0;
+  }
+}
 .cart__title,
 .table__container {
   width: 80%;
@@ -2119,4 +2234,22 @@ input:checked + label .description {
 
 #innerTable td {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 390px) {
+  .table__container {
+    width: 100%;
+    margin: 0;
+  }
+  .table {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+  .table__container th {
+    font-size: 16px;
+  }
+  .table > thead {
+    vertical-align: middle;
+  }
 }/*# sourceMappingURL=main.css.map */

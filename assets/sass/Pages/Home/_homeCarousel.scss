@@ -88,38 +88,54 @@ input:checked + label .description {
 .myCarousel .myCarousel__card[for="c1"] {
     background-image: url("https://shop.cyberlearn.vn/images/vans-black-black.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 .myCarousel .myCarousel__card[for="c2"] {
     background-image: url("https://shop.cyberlearn.vn/images/converse-chuck-taylor.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 .myCarousel .myCarousel__card[for="c3"] {
     background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-270-react.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 .myCarousel .myCarousel__card[for="c4"] {
     background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for="c5"] {
     background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for="c6"] {
     background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for="c7"] {
     background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 
 .myCarousel .myCarousel__card[for="c8"] {
     background-image: url("https://shop.cyberlearn.vn/images/nike-air-max-97.png");
     background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
 
 .myCarousel__card h4 {
@@ -192,4 +208,35 @@ input:checked + label .description {
 
 .infoAndButton p {
     font-style: italic;
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 768px) {
+    .myCarousel .wrapper .myCarousel__card {
+        background-size: 300px;
+        height: 300px;
+    }
+    .infoAndButton p {
+        display: none;
+    }
+    .myCarousel .container {
+        height: 350px;
+    }
+    .description h4{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .myCarousel .wrapper .myCarousel__card {
+        background-size: 300px;
+        height: 300px;
+    }
+    .infoAndButton p {
+        display: none;
+    }
+    .myCarousel .container {
+        height: 350px;
+    }
 }
