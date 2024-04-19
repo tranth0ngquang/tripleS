@@ -22,7 +22,7 @@ function getShoesList() {
     .then(function (response) {
       shoesList = response.data.content;
       hienThiCarousel(response.data.content);
-      hienThiProduct(response.data.content);
+      // hienThiProduct(response.data.content);
     })
     .catch(function (error) {
       console.log(error);

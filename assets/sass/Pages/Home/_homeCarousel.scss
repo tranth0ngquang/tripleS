@@ -147,7 +147,7 @@ input:checked + label .description {
 /* css button */
 .button__seemore {
     --border-radius: 15px;
-    --border-width: 4px;
+    --border-width: 2px;
     appearance: none;
     position: relative;
     padding: 5px 10px;
@@ -175,6 +175,7 @@ input:checked + label .description {
     padding: var(--border-width);
     border-radius: var(--border-radius);
     background-image: conic-gradient(#488cfb, #29dbbc, #ddf505, #ff9f0e, #e440bb, #655adc, #488cfb);
+
     -webkit-mask-image: var(--m-i), var(--m-i);
     mask-image: var(--m-i), var(--m-i);
     -webkit-mask-origin: var(--m-o);
@@ -223,7 +224,7 @@ input:checked + label .description {
     .myCarousel .container {
         height: 350px;
     }
-    .description h4{
+    .description h4 {
         font-size: 16px;
     }
 }

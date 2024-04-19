@@ -298,7 +298,13 @@
 }
 
 .input-group {
-    width: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-outline {
+    width: 100%;
+    display: flex;
 }
 // RESPONSIVE
 
